@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 // components
 import MyDock from "@/components/my-dock";
-import LinearGradient from "@/components/magicui/linear-gradient";
+import GradientBackground from "@/components/gradient-background";
 // providers
 import { ThemeProvider } from "@/components/theme-provider";
 // utils
@@ -27,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(inter.className, 'w-screen h-screen flex flex-col')}>
+      <body className={cn(inter.className, 'w-screen h-screen flex flex-col items-center')}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -36,11 +36,7 @@ export default function RootLayout({
         >
           {children}
           <MyDock />
-          <LinearGradient 
-            className="-z-10"
-            from="#ffffff"
-            to="#f8f8f8"
-          />
+          <GradientBackground />
         </ThemeProvider>
       </body>
     </html>
