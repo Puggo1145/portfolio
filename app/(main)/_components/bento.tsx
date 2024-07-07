@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 // images
 import figma from "@/assets/images/figma.png";
+import figmaDark from "@/assets/images/figma-dark.png";
 import cqnumini from "@/assets/images/cqnu-mini.png";
 import xdtodo from "@/assets/images/xdtodo.png";
 import meowPlanet from "@/assets/images/meow-planet.png";
@@ -86,11 +87,9 @@ const features = [
                         </div>
                         <blockquote className="mt-2">
                             <Image
+                                className="w-[180px] lg:w-[240px] rounded-2xl"
                                 src={product.img}
                                 alt={product.name}
-                                className="object-cover rounded-2xl"
-                                width={200}
-                                height={200}
                             />
                         </blockquote>
                     </figure>
@@ -118,7 +117,17 @@ const features = [
         description: "Proficient in English and Chinese, I can work with people all around the world.",
         href: "/",
         cta: "Learn more",
-        background: <img className="absolute -right-20 -top-20 opacity-60" />,
+        background: (
+            <div className="overflow-hidden absolute h-full w-full text-center pt-[84px] lg:pt-6 lg:pr-6 lg:text-right">
+                <p className="text-6xl font-bold lg:text-3xl text-slate-600">TOEFL 110</p>
+                <div className="mt-2 space-x-3 lg:hidden text-slate-500">
+                    <span>Reading: 29</span>
+                    <span>Listening: 26</span>
+                    <span>Speaking: 26</span>
+                    <span>Writing: 29</span>
+                </div>
+            </div>
+        ),
         className: "lg:col-start-3 lg:col-end-3 lg:row-start-3 lg:row-end-4",
     },
     {
@@ -129,11 +138,19 @@ const features = [
         cta: "Learn more",
         background: (
             <div className="overflow-hidden absolute h-full w-full 
-            lg:pb-[150px] pb-[120px] pt-4">
+            lg:pb-[150px] pb-[100px]">
                 <Image
                     src={figma}
                     className="object-cover size-full opacity-60 
-                    transition-all hover:scale-110 duration-300"
+                    transition-all hover:scale-110 duration-300
+                    dark:hidden"
+                    alt=""
+                />
+                <Image
+                    src={figmaDark}
+                    className="object-cover size-full opacity-60 
+                    transition-all hover:scale-110 duration-300
+                    hidden dark:block"
                     alt=""
                 />
             </div>
