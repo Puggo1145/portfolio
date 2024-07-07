@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 // components
 import MyDock from "@/components/my-dock";
+import LinearGradient from "@/components/magicui/linear-gradient";
 // providers
 import { ThemeProvider } from "@/components/theme-provider";
 // utils
@@ -35,6 +36,11 @@ export default function RootLayout({
         >
           {children}
           <MyDock />
+          <LinearGradient 
+            className="-z-10"
+            from="#ffffff"
+            to="#f8f8f8"
+          />
         </ThemeProvider>
       </body>
     </html>

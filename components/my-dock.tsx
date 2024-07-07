@@ -42,6 +42,7 @@ const MyDock: React.FC = () => {
     return (
         <div className="fixed w-full flex items-center bottom-4">
             <Dock
+                className="bg-background"
                 magnification={60}
                 distance={100}
             >
