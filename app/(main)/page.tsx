@@ -20,11 +20,14 @@ const Page: React.FC = () => {
         </div>
         <div className="mt-8 flex gap-x-4">
           <Button
+            asChild
             className="rounded-full"
             size="lg"
           >
-            <FileTextIcon className="mr-2" size={20} />
-            My Resume
+            <Link href="/resume.pdf">
+              <FileTextIcon className="mr-2" size={20} />
+              My Resume
+            </Link>
           </Button>
           <Button
             asChild

@@ -21,6 +21,7 @@ import cqnumini from "@/assets/images/cqnu-mini.png";
 import xdtodo from "@/assets/images/xdtodo.png";
 import meowPlanet from "@/assets/images/meow-planet.png";
 import everyMusic from "@/assets/images/everymusic.png";
+import ydcrm from "@/assets/images/ydcrm.png";
 
 const myProducts = [
     {
@@ -39,6 +40,10 @@ const myProducts = [
         name: "人人音乐家",
         img: everyMusic,
     },
+    {
+        name: "樾达 CRM",
+        img: ydcrm,
+    },
 ]
 
 const skills = [
@@ -53,7 +58,6 @@ const skills = [
     "nextdotjs",
     "nuxtdotjs",
     "python",
-    "c++",
     "docker",
     "git",
 ]
@@ -68,17 +72,18 @@ const features = [
         background: (
             <Marquee
                 pauseOnHover
-                className="absolute top-10 [--duration:20s] [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)]"
+                className="flex items-center
+                absolute top-10 [--duration:18s] [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)]"
             >
                 {myProducts.map((product, idx) => (
                     <figure
                         key={idx}
                         className={cn(
-                            "relative w-full cursor-pointer overflow-hidden rounded-xl p-4",
+                            "relative cursor-pointer overflow-hidden rounded-xl p-4",
                             "transform-gpu blur-[1px] transition-all duration-300 ease-out hover:blur-none",
                         )}
                     >
-                        <div className="flex flex-row items-center gap-2">
+                        <div className="flex items-center">
                             <div className="flex flex-col">
                                 <figcaption className="text-lg font-medium dark:text-white ">
                                     {product.name}
@@ -87,7 +92,7 @@ const features = [
                         </div>
                         <blockquote className="mt-2">
                             <Image
-                                className="w-[180px] lg:w-[240px] rounded-2xl"
+                                className="h-full rounded-2xl"
                                 src={product.img}
                                 alt={product.name}
                             />
