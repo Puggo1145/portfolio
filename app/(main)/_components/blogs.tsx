@@ -3,37 +3,29 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 // icons
 import { FileJsonIcon } from "lucide-react";
+// constants
+import { blogs } from "@/constants/blogs";
 
 const Blogs: React.FC = () => {
     return (
         <div className="w-full space-y-12">
-            <div className="space-y-2 w-full lg:max-w-[50%]">
+            <div className="space-y-2 w-full lg:max-w-[80%]">
                 <FileJsonIcon className="text-foreground" size={72} />
                 <h1 className="text-4xl font-bold text-foreground">
                     Blogs
                 </h1>
                 <p className="text-xl">
-                    I am currently translating some excellent learning materials including math and coding into chinese.
+                    Here are some of my articles which recorded my learning journey. Hope they can help you.
                 </p>
                 <p className="text-xl">
-                    I want to share them with my fellows.
+                    I am currently translating some excellent learning materials including math and coding into chinese.
                 </p>
             </div>
 
-            <section className="w-full flex flex-col gap-4 items-center lg:flex-row">
-                <BlogCard
-                    image="https://www.notion.so/images/page-cover/rijksmuseum_jansz_1637.jpg"
-                    title="交互线性代数（进行中...）"
-                    description="佐治亚理工学院《Interactive Linear Algebra》中文翻译版"
-                    github="https://github.com/Puggo1145/Interactive-Linear-Algebra-CN"
-                    />
-                <BlogCard
-                    image="https://tinted-galette-9e6.notion.site/image/https%3A%2F%2Fmiro.medium.com%2Fv2%2Fresize%3Afit%3A2000%2F1*y6C4nSvy2Woe0m7bWEn4BA.png?table=block&id=9cb6f85e-4185-4521-bdff-6ed7ce9d806f&spaceId=da1a9f2b-1125-4084-ab58-0d786d068870&width=2000&userId=&cache=v2"
-                    title="Oh My React（进行中...）"
-                    description="著名博客 Build your own react 的中文翻译 + 个人精修"
-                    link="https://tinted-galette-9e6.notion.site/Oh-My-React-React-Deep-Dive-9cb6f85e41854521bdff6ed7ce9d806f?pvs=74"
-                    github="https://github.com/Puggo1145/oh-my-react"
-                />
+            <section className="w-full grid gap-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+                {blogs.map((blog, index) => (
+                    <BlogCard key={index} {...blog} />
+                ))}
             </section>
         </div>
     );
@@ -81,7 +73,7 @@ const BlogCard = ({
                             className="rounded-full mt-4"
                         >
                             <Link href={link}>
-                                link
+                                Read More
                             </Link>
                         </Button>
                     }
