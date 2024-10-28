@@ -25,24 +25,24 @@ import ydcrm from "@/assets/images/ydcrm.png";
 
 const myProducts = [
     {
-        name: "智慧重师",
+        name: "CQNU Intelligent",
         img: cqnumini,
     },
     {
-        name: "学搭 Todo",
-        img: xdtodo,
-    },
-    {
-        name: "猫猫星球",
-        img: meowPlanet,
-    },
-    {
-        name: "人人音乐家",
+        name: "EveryMusic - Virtual music classroom for under-resourced schools",
         img: everyMusic,
     },
     {
-        name: "樾达 CRM",
+        name: "Meow Planet",
+        img: meowPlanet,
+    },
+    {
+        name: "yueda CRM",
         img: ydcrm,
+    },
+    {
+        name: "Let's Todo",
+        img: xdtodo,
     },
 ]
 
@@ -65,8 +65,8 @@ const skills = [
 const features = [
     {
         Icon: MonitorSmartphoneIcon,
-        name: "My Products Online",
-        description: "I have deployed two products which are now in production, faciliating people's lives in different ways.",
+        name: "My Products",
+        description: "Two of these products are now in production, making people's lives easier in different ways.",
         href: "/",
         cta: "Learn more",
         background: (
@@ -166,7 +166,7 @@ const features = [
 
 const Bento: React.FC = () => {
     return (
-        <BentoGrid className="lg:grid-rows-3">
+        <BentoGrid className="w-full lg:grid-rows-3">
             {features.map((feature) => (
                 <BentoCard key={feature.name} {...feature} />
             ))}

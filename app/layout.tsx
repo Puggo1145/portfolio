@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 // components
 import MyDock from "@/components/my-dock";
 import GradientBackground from "@/components/gradient-background";
+import { CircleIndicator } from "@/components/motions/scroll-indicator";
 // providers
 import { ThemeProvider } from "@/components/theme-provider";
 // utils
@@ -28,13 +29,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(inter.className, 'w-screen h-screen flex flex-col items-center')}>
+      <body className={cn(inter.className, 'w-full h-screen flex flex-col items-center')}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
+          <CircleIndicator />
           {children}
           <MyDock />
           <GradientBackground />

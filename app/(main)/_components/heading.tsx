@@ -10,7 +10,7 @@ import { FileTextIcon } from "lucide-react";
 
 const Heading: React.FC = () => {
   return (
-    <>
+    <section className="relative w-full flex flex-col gap-y-8">
       <div className="relative z-10 w-full max-w-[800px] flex flex-col items-start gap-y-4">
         <BoxReveal boxColor="#000000" duration={0.5}>
           <div className="size-24 rounded-full bg-slate-200 overflow-hidden">
@@ -66,7 +66,7 @@ const Heading: React.FC = () => {
           </Link>
         </Button>
       </div>
-    </>
+    </section>
   );
 };
 
