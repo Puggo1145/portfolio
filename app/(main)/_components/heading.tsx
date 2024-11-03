@@ -3,12 +3,16 @@ import Image from "next/image";
 import BoxReveal from "@/components/magicui/box-reveal";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { FlipWords } from "@/components/ui/flip-words";
+import { TextHoverEffect } from "@/components/ui/text-hover-effect";
 // images
 import avatar from "@/assets/images/avatar.jpeg";
 // icons
 import { FileTextIcon } from "lucide-react";
 
 const Heading: React.FC = () => {
+  const flipingWords = ["products", "user experience", "design"];
+
   return (
     <section className="relative w-full flex flex-col gap-y-8">
       <div className="relative z-10 w-full max-w-[800px] flex flex-col items-start gap-y-4">
@@ -19,7 +23,7 @@ const Heading: React.FC = () => {
         </BoxReveal>
 
         <BoxReveal boxColor="#000000" duration={0.75}>
-          <h1 className="h-[56px] text-5xl font-bold">
+          <h1 className="text-4xl font-bold lg:text-5xl h-[56px]">
             Hi! I&apos;m Puggo 👋
           </h1>
         </BoxReveal>
@@ -27,15 +31,17 @@ const Heading: React.FC = () => {
         <div>
           <BoxReveal boxColor="#000000" duration={1}>
             <p className="text-xl">
-              Fullstack
-              <span className="font-bold"> Web Developer</span> and
+              <span className="font-bold">Fullstack</span> Web Developer and
               <span className="font-bold"> Product Designer</span>.
             </p>
           </BoxReveal>
           <BoxReveal boxColor="#000000" duration={1.25}>
-            <p className="text-xl">
-              I love creating beautiful and amazing products.
-            </p>
+            <>
+              <span className="text-xl">
+                I love creating beautiful and amazing
+              </span>
+              <FlipWords words={flipingWords} className="font-bold text-xl lg:text-3xl" />.
+            </>
           </BoxReveal>
         </div>
       </div>

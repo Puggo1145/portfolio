@@ -7,8 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "addmagic": "magicui-cli add",
-    "addui": "shadcn-ui add"
+    "magicui": "magicui-cli",
+    "shadcn": "shadcn-ui",
+    "aceui": "aceternity-ui"
   },
   "dependencies": {
     "@popmotion/popcorn": "^0.4.4",

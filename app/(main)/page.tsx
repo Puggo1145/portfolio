@@ -1,7 +1,7 @@
 // components
 import Heading from "./_components/heading";
 import Bento from "./_components/bento";
-import MyProducts from "./_components/my-products";
+import MyProducts from "./_components/products/my-products";
 import RevealText from "./_components/reveal-text";
 import Blogs from "./_components/blogs";
 
