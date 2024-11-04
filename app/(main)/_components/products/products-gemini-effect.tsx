@@ -22,8 +22,8 @@ export function ProductsGeminiEffect() {
       ref={ref}
     >
       <GoogleGeminiEffect
-        title="Things Starts Here"
-        description=" "
+        title="Where Products Meet Imagination"
+        description="Ideas can be small, simple and even silly initially, but transforming them into extraordinary products is what makes them valuable"
         pathLengths={[
           pathLengthFirst,
           pathLengthSecond,

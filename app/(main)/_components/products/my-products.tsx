@@ -1,16 +1,12 @@
 // components
 import { ProductsGeminiEffect } from "./products-gemini-effect";
-// images
-import cqnumini from "@/assets/images/cqnu-mini.png";
-import xdtodo from "@/assets/images/xdtodo.png";
-import meowPlanet from "@/assets/images/meow-planet.png";
-import everyMusic from "@/assets/images/everymusic.png";
-import ydcrm from "@/assets/images/ydcrm.png";
+import { HeroParallaxDemo } from "./parallax";
 
 const MyProducts = () => {
   return (
-    <div className="w-full flex gap-x-4">
+    <div className="w-full flex flex-col gap-x-4">
       <ProductsGeminiEffect />
+      <HeroParallaxDemo />
     </div>
   )
 }
