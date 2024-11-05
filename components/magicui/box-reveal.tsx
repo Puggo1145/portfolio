@@ -2,8 +2,10 @@
 
 import { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
+import type { ComponentProps } from "react";
+import { cn } from "@/lib/utils";
 
-interface BoxRevealProps {
+interface BoxRevealProps extends ComponentProps<"div"> {
   children: JSX.Element;
   width?: "fit-content" | "100%";
   boxColor?: string;
@@ -15,6 +17,7 @@ export const BoxReveal = ({
   width = "fit-content",
   boxColor,
   duration,
+  className
 }: BoxRevealProps) => {
   const mainControls = useAnimation();
   const slideControls = useAnimation();
@@ -33,7 +36,11 @@ export const BoxReveal = ({
   }, [isInView, mainControls, slideControls]);
 
   return (
-    <div ref={ref} style={{ position: "relative", width, overflow: "hidden" }}>
+    <div 
+      ref={ref} 
+      style={{width}}
+      className={cn("relative overflow-hidden", className)}
+    >
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 75 },

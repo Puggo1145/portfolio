@@ -10,7 +10,11 @@ import ydcrm from "@/assets/images/ydcrm.png";
 
 
 export function HeroParallaxDemo() {
-  return <HeroParallax products={products} />;
+  return (
+    <div className="w-full overflow-hidden">
+      <HeroParallax products={products} />
+    </div>
+  )
 }
 export const products = [
   {

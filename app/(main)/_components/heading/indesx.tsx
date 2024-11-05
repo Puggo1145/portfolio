@@ -1,12 +1,9 @@
-import Image from "next/image";
 // components
+import CatAvatar from "./cat-avatar";
 import BoxReveal from "@/components/magicui/box-reveal";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { FlipWords } from "@/components/ui/flip-words";
-import { TextHoverEffect } from "@/components/ui/text-hover-effect";
-// images
-import avatar from "@/assets/images/avatar.jpeg";
 // icons
 import { FileTextIcon } from "lucide-react";
 
@@ -16,10 +13,8 @@ const Heading: React.FC = () => {
   return (
     <section className="relative w-full flex flex-col gap-y-8">
       <div className="relative z-10 w-full max-w-[800px] flex flex-col items-start gap-y-4">
-        <BoxReveal boxColor="#000000" duration={0.5}>
-          <div className="size-24 rounded-full bg-slate-200 overflow-hidden">
-            <Image src={avatar} alt="avatar" className="size-full" />
-          </div>
+        <BoxReveal boxColor="#000000" width="100%" duration={0.5} className="h-28 flex items-center pl-2">
+          <CatAvatar />
         </BoxReveal>
 
         <BoxReveal boxColor="#000000" duration={0.75}>

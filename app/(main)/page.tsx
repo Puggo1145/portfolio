@@ -1,5 +1,5 @@
 // components
-import Heading from "./_components/heading";
+import Heading from "./_components/heading/indesx";
 import Bento from "./_components/bento";
 import MyProducts from "./_components/products/my-products";
 import RevealText from "./_components/reveal-text";
