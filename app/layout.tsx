@@ -6,6 +6,7 @@ import GradientBackground from "@/components/gradient-background";
 import { CircleIndicator } from "@/components/motions/scroll-indicator";
 // providers
 import { ThemeProvider } from "@/components/theme-provider";
+import { Analytics } from "@vercel/analytics/react";
 // utils
 import { cn } from "@/lib/utils";
 
@@ -41,6 +42,7 @@ export default function RootLayout({
           <MyDock />
           <GradientBackground />
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
