@@ -52,14 +52,14 @@ export const HeroParallax = ({
     springConfig
   );
   const translateY = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [-400, 600]),
+    useTransform(scrollYProgress, [0, 0.2], [-400, 800]),
     springConfig
   );
 
   return (
     <div
       ref={ref}
-      className="h-[200vh] antialiased relative flex flex-col self-auto [perspective:500px] [transform-style:preserve-3d]"
+      className="h-[240vh] antialiased relative flex flex-col self-auto [perspective:500px] [transform-style:preserve-3d]"
     >
       <Header />
       <motion.div
@@ -145,7 +145,7 @@ export const ProductCard = ({
       >
         {product.thumbnail
           ?
-          <img
+          <Image
             src={product.thumbnail}
             height="600"
             width="600"

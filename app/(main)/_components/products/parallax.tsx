@@ -8,10 +8,10 @@ import meowPlanet from "@/assets/images/meow-planet.png";
 import everyMusic from "@/assets/images/everymusic.png";
 import ydcrm from "@/assets/images/ydcrm.png";
 
-
+// TODO - mobile optimization
 export function ProductsParallax() {
   return (
-    <div className="w-full">
+    <div className="w-full overflow-hidden">
       <HeroParallax productsFirstRow={productsFirstRow} productsSecondRow={productsSecondRow} />
     </div>
   )
