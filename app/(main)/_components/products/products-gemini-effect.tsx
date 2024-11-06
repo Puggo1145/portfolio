@@ -22,8 +22,8 @@ export function ProductsGeminiEffect() {
       ref={ref}
     >
       <GoogleGeminiEffect
-        title="Where Products Meet Imagination"
-        description="Ideas can be small, simple and even silly initially, but transforming them into extraordinary products is what makes them valuable"
+        title="Make Ideas Real"
+        description="Imagination and designs of ideas are great, but making them real products is how I make them valuable"
         pathLengths={[
           pathLengthFirst,
           pathLengthSecond,

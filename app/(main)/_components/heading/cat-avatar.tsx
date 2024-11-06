@@ -8,9 +8,9 @@ import DouDou1 from "@/assets/images/doudou-1.jpeg";
 import DouDou2 from "@/assets/images/doudou-2.jpg";
 import DouDou3 from "@/assets/images/doudou-3.jpeg";
 
-const images = [DouDou1, DouDou2, DouDou3];
 
 const CatAvatar = () => {
+    const images = [DouDou1, DouDou2, DouDou3];
     const [currentImageIndex, setCurrentImageIndex] = useState(1);
 
     const handleClick = () => {

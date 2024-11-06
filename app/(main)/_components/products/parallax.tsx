@@ -9,14 +9,14 @@ import everyMusic from "@/assets/images/everymusic.png";
 import ydcrm from "@/assets/images/ydcrm.png";
 
 
-export function HeroParallaxDemo() {
+export function ProductsParallax() {
   return (
-    <div className="w-full overflow-hidden">
-      <HeroParallax products={products} />
+    <div className="w-full">
+      <HeroParallax productsFirstRow={productsFirstRow} productsSecondRow={productsSecondRow} />
     </div>
   )
 }
-export const products = [
+export const productsSecondRow = [
   {
     title: "CQNU intelligent",
     link: "https://gomoonbeam.com",
@@ -32,14 +32,22 @@ export const products = [
     link: "https://meowplanet.com",
     thumbnail: meowPlanet.src,
   },
+];
+
+export const productsFirstRow = [
+  {
+    title: "YDCRM",
+    link: "https://ydcrm.com",
+    thumbnail: ydcrm.src,
+  },
   {
     title: "Every Music",
     link: "https://everymusic.com",
     thumbnail: everyMusic.src,
   },
   {
-    title: "YDCRM",
-    link: "https://ydcrm.com",
-    thumbnail: ydcrm.src,
+    title: "Meow Planet Web",
+    link: "https://mmxq.cn",
+    thumbnail: "",
   },
-];
+]

@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { FlipWords } from "@/components/ui/flip-words";
 // icons
-import { FileTextIcon } from "lucide-react";
+import { FileTextIcon, GithubIcon } from "lucide-react";
 
 const Heading: React.FC = () => {
   const flipingWords = ["products", "user experience", "design"];
@@ -45,7 +45,7 @@ const Heading: React.FC = () => {
           Puggo
         </h2>
       </div>
-      <div className="mt-8 flex gap-x-4">
+      <div className="flex gap-x-4">
         <Button
           asChild
           className="rounded-full"

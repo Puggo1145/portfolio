@@ -66,7 +66,7 @@ const features = [
     {
         Icon: MonitorSmartphoneIcon,
         name: "My Products",
-        description: "Two of these products are now in production, making people's lives easier in different ways.",
+        description: "Three of these products are now in production, making people's lives easier in different ways.",
         href: "/",
         cta: "Learn more",
         background: (
@@ -120,8 +120,8 @@ const features = [
         Icon: GlobeIcon,
         name: "Communicate freely",
         description: "Proficient in English and Chinese, I can work with people all around the world.",
-        href: "/",
-        cta: "Learn more",
+        // href: "/",
+        // cta: "Learn more",
         background: (
             <div className="overflow-hidden absolute h-full w-full text-center pt-[84px] lg:pt-6 lg:pr-6 lg:text-right">
                 <p className="text-6xl font-bold lg:text-3xl text-slate-600">TOEFL 110</p>
@@ -138,7 +138,7 @@ const features = [
     {
         Icon: FigmaIcon,
         name: "My Designs",
-        description: "Check my designs on Figma. They will be turned into real apps soon",
+        description: "Check my designs on Figma. See how they will be turned into real products soon",
         href: "#",
         cta: "Learn more",
         background: (
