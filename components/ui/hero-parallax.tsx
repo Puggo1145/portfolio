@@ -36,7 +36,7 @@ export const HeroParallax = ({
     springConfig
   );
   const translateXReverse = useSpring(
-    useTransform(scrollYProgress, [0.2, 1], [-200, 1000]),
+    useTransform(scrollYProgress, [0.2, 1], [-1200, 800]),
     springConfig
   );
   const rotateX = useSpring(
@@ -87,7 +87,7 @@ export const HeroParallax = ({
               product={product}
               translate={translateXReverse}
               key={product.title}
-              className="w-[300px] h-[640px]"
+              className="w-[290px] h-[640px]"
             />
           ))}
         </motion.div>
@@ -137,7 +137,7 @@ export const ProductCard = ({
       }}
       transition={{ ease: "easeOut", duration: 0.15 }}
       key={product.title}
-      className={`group/product h-96 w-[30rem] relative flex-shrink-0 hover:brightness-90 bg-secondary ${className}`}
+      className={`group/product h-96 w-[30rem] relative flex-shrink-0 hover:brightness-75 bg-secondary ${className}`}
     >
       <Link
         href={product.link || ""}
@@ -158,7 +158,7 @@ export const ProductCard = ({
           </p>
         }
       </Link>
-      <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">
+      <h2 className="absolute top-4 left-4 opacity-0 group-hover/product:opacity-100 text-primary font-bold">
         {product.title}
       </h2>
     </motion.div>
