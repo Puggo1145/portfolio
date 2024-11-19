@@ -1,11 +1,15 @@
 "use client";
+
+import Image from "next/image";
 import {
-  useMotionValueEvent,
+  // useMotionValueEvent,
   useScroll,
   useTransform,
   motion,
 } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
+// image
+import Steve from "@/assets/images/steve.png" 
 
 interface TimelineEntry {
   title: string;
@@ -37,17 +41,23 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       className="w-full bg-white dark:bg-neutral-950 font-sans md:px-10"
       ref={containerRef}
     >
-      <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-        <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
-          From Liberal Arts to Coding: <br />
-          "Technology alone is not enough. It's technology married with the liberal arts, married with the humanities, that yields the results that make our hearts sing." - Steve Jobs
+      <div className="relative max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
+        <h2 className="text-xl md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
+          <strong>From Liberal Arts to Coding:</strong> <br />
+          &ldquo;Technology alone is not enough. It&apos;s technology married with the liberal arts, married with the humanities, that yields the results that make our hearts sing.&rdquo; <br />
+          - Steve Jobs
         </h2>
-        <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-md">
-          Development is art in essence. <br />
-          The art of transforming crazy ideas into reality. <br />
-          The art of creating something out of nothing. <br />
-          The art of bringing joy or comfort to those in need. <br />
+        <p className="text-neutral-700 dark:text-neutral-300 text-base md:text-base max-w-md">
+          Development is an art form. <br />
+          It breaks barriers of possibility, <br />
+          creates something out of nothing, <br />
+          and brings delight to humanity. <br />
         </p>
+        <Image 
+          src={Steve}
+          alt="steve"
+          className="absolute top-2 right-0 h-full object-cover opacity-30 dark:invert"
+        />
       </div>
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
