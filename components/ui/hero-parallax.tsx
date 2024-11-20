@@ -91,6 +91,7 @@ export const HeroParallax = ({
               width={290}
               height={640}
               className="w-[290px] h-[640px]"
+              key={product.title}
             />
           ))}
         </motion.div>

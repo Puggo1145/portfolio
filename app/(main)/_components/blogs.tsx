@@ -16,7 +16,7 @@ const Blogs: React.FC = () => {
                     Blogs
                 </h1>
                 <p className="text-xl">
-                    Here are my articles documenting my learning journey. I hope they're helpful.
+                    Here are my articles documenting my learning journey. I hope they&apos;re helpful.
                 </p>
             </div>
 
