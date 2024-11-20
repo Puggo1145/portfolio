@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 // components
 import { Button } from "@/components/ui/button";
 // icons
@@ -15,10 +16,7 @@ const Blogs: React.FC = () => {
                     Blogs
                 </h1>
                 <p className="text-xl">
-                    Here are some of my articles which recorded my learning journey. Hope they can help you.
-                </p>
-                <p className="text-xl">
-                    I am currently translating some excellent learning materials including math and coding into chinese.
+                    Here are my articles documenting my learning journey. I hope they're helpful.
                 </p>
             </div>
 
@@ -46,7 +44,13 @@ const BlogCard = ({
 }) => {
     return (
         <div className="w-full max-w-[500px] rounded-xl border overflow-hidden">
-            <img src={image} className="w-full h-[200px] object-cover" alt="" />
+            <Image 
+                className="w-full h-[200px] object-cover" 
+                src={image}
+                width={366}
+                height={200}
+                alt="" 
+            />
             <div className="p-4">
                 <h1 className="text-2xl font-bold">
                     {title}

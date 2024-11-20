@@ -77,6 +77,8 @@ export const HeroParallax = ({
               product={product}
               translate={translateX}
               key={product.title}
+              width={600}
+              height={360}
               className="w-[600px] h-[360px]"
             />
           ))}
@@ -86,7 +88,8 @@ export const HeroParallax = ({
             <ProductCard
               product={product}
               translate={translateXReverse}
-              key={product.title}
+              width={290}
+              height={640}
               className="w-[290px] h-[640px]"
             />
           ))}
@@ -121,11 +124,15 @@ export const Header = () => {
 export const ProductCard = ({
   product,
   translate,
-  className
+  className,
+  width,
+  height,
 }: {
   product: Product;
   translate: MotionValue<number>;
   className?: string;
+  width?: number;
+  height?: number;
 }) => {
   return (
     <motion.div
@@ -137,7 +144,7 @@ export const ProductCard = ({
       }}
       transition={{ ease: "easeOut", duration: 0.15 }}
       key={product.title}
-      className={`group/product h-96 w-[30rem] relative flex-shrink-0 hover:brightness-75 bg-secondary ${className}`}
+      className={`group/product relative flex-shrink-0 hover:brightness-75 bg-secondary ${className}`}
     >
       <Link
         href={product.link || ""}
@@ -147,8 +154,8 @@ export const ProductCard = ({
           ?
           <Image
             src={product.thumbnail}
-            height="600"
-            width="600"
+            width={width}
+            height={height}
             className="absolute inset-0 h-full object-cover object-center rounded-xl"
             alt={product.title}
           />

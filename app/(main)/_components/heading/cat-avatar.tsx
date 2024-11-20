@@ -57,6 +57,8 @@ const CatAvatar = () => {
                 >
                     <Image
                         src={images[currentImageIndex]}
+                        width={96}
+                        height={96}
                         alt="avatar"
                         className="size-full object-cover overflow-hidden rounded-full"
                     />

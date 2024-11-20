@@ -9,7 +9,7 @@ import {
 } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 // image
-import Steve from "@/assets/images/steve.png" 
+import Steve from "@/assets/images/steve.png"
 
 interface TimelineEntry {
   title: string;
@@ -48,12 +48,12 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           - Steve Jobs
         </h2>
         <p className="text-neutral-700 dark:text-neutral-300 text-base md:text-base max-w-md">
-          Development is an art form. <br />
+          Development is, at its core, an art. <br />
           It breaks barriers of possibility, <br />
           creates something out of nothing, <br />
           and brings delight to humanity. <br />
         </p>
-        <Image 
+        <Image
           src={Steve}
           alt="steve"
           className="absolute top-2 right-0 h-full object-cover opacity-30 dark:invert"
