@@ -6,7 +6,6 @@ import cqnumini from "@/assets/images/cqnu-mini.png";
 import cqnuminiStudy from "@/assets/images/cqnu-mini-study.png";
 import cqnuminiSchedule from "@/assets/images/cqnu-mini-schedule.png";
 import cqnuminiService from "@/assets/images/cqnu-mini-service.png";
-import cqnuminiFood from "@/assets/images/cqnu-mini-food.png";
 import xdtodo from "@/assets/images/xdtodo.png";
 import meowPlanet from "@/assets/images/meow-planet.png";
 import everyMusic from "@/assets/images/everymusic.png";
@@ -36,11 +35,6 @@ export const productsSecondRow = [
     title: "CQNU intelligent (service)",
     link: "",
     thumbnail: cqnuminiService.src,
-  },
-  {
-    title: "CQNU intelligent (food)",
-    link: "",
-    thumbnail: cqnuminiFood.src,
   },
   {
     title: "CQNU intelligent (schedule)",

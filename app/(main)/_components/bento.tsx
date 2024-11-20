@@ -66,9 +66,7 @@ const features = [
     {
         Icon: MonitorSmartphoneIcon,
         name: "My Products",
-        description: "Three of these products are now in production, making people's lives easier in different ways.",
-        href: "/",
-        cta: "Learn more",
+        description: "Three of these products are now in production, making people's lives easier in different ways. Scroll to see more.",
         background: (
             <Marquee
                 pauseOnHover
@@ -140,7 +138,7 @@ const features = [
         name: "My Designs",
         description: "Check my designs on Figma. See how they will be turned into real products soon",
         href: "#",
-        cta: "Learn more",
+        cta: "Comming Soon",
         background: (
             <div className="overflow-hidden absolute h-full w-full 
             lg:pb-[150px] pb-[100px]">

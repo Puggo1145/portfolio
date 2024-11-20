@@ -95,12 +95,11 @@ export const productTimeline: ProductTimeline[] = [
     },
     {
         time: "2024",
-        heading: "YueDa CRM - Explore the state of the art",
+        heading: "Yueda CRM - Explore the state of the art and real business",
         desc: (
             <>
-                A fullstack CRM system created for my dad's company with cutting age tech stacks such as Next.js, server actions and prisma, which is now in production. <br />
-                I gained large amount of toB experience from this project. Data security and data-centered user experience are the top concerns for real businesses. <br />
-                <br />
+                A fullstack CRM system created for my dad's company with cutting-age tech stacks such as Next.js, server actions and prisma, which is now in production. <br />
+                This app has helped my dad's company to manage more than <strong>10k+ data</strong>, bringing more than <strong>30% efficiency improvement</strong>. <br />
                 Due to some privacy concerns, you can only view the protected frontend source code on Github.
             </>
         ),
@@ -110,7 +109,7 @@ export const productTimeline: ProductTimeline[] = [
             ydcrmTasks.src,
             ydcrmData.src,
         ],
-        buttonText: "See on Github",
+        buttonText: "See frontend demo on Github",
         link: "https://github.com/Puggo1145/ydcrm-nextjs-frontend",
     }
 ];

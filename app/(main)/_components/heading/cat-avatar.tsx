@@ -6,7 +6,7 @@ import { useState } from "react";
 // images
 import DouDou1 from "@/assets/images/doudou-1.jpeg";
 import DouDou2 from "@/assets/images/doudou-2.jpg";
-import DouDou3 from "@/assets/images/doudou-3.jpeg";
+import DouDou3 from "@/assets/images/doudou-3.png";
 
 
 const CatAvatar = () => {
