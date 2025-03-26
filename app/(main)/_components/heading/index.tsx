@@ -4,8 +4,9 @@ import BoxReveal from "@/components/magicui/box-reveal";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { FlipWords } from "@/components/ui/flip-words";
+import { NewProject } from "./new-project";
 // icons
-import { FileTextIcon, GithubIcon } from "lucide-react";
+import { FileTextIcon } from "lucide-react";
 
 const Heading: React.FC = () => {
   const flipingWords = ["products", "user experience", "design"];
@@ -18,7 +19,7 @@ const Heading: React.FC = () => {
         </BoxReveal>
 
         <BoxReveal boxColor="#000000" duration={0.75}>
-          <h1 className="text-4xl font-bold lg:text-5xl h-[56px]">
+          <h1 className="text-4xl font-bold lg:text-5xl h-[56px] font-sans">
             Hi! I&apos;m Puggo 👋
           </h1>
         </BoxReveal>
@@ -41,9 +42,7 @@ const Heading: React.FC = () => {
         </div>
       </div>
       <div className="absolute right-0 top-[120px] z-0">
-        <h2 className="text-[128px] font-bold text-gray-200/50 dark:text-gray-700/30">
-          Puggo
-        </h2>
+        <NewProject />
       </div>
       <div className="flex gap-x-4">
         <Button
@@ -62,7 +61,10 @@ const Heading: React.FC = () => {
           size="lg"
           variant="outline"
         >
-          <Link href="https://github.com/Puggo1145">
+          <Link 
+            href="https://github.com/Puggo1145"
+            target="_blank"
+          >
             Github
           </Link>
         </Button>

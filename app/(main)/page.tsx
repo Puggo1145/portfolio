@@ -31,6 +31,10 @@ const Page: React.FC = () => {
       <Constrain>
         <Blogs />
       </Constrain>
+
+      <Constrain>
+        <p className="text-muted-foreground text-xs">蜀ICP备2025119544号-1</p>
+      </Constrain>
     </main>
   );
 };
