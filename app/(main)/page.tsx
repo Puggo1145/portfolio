@@ -4,6 +4,7 @@ import Bento from "./_components/bento";
 import MyProducts from "./_components/products";
 import RevealText from "./_components/reveal-text";
 import Blogs from "./_components/blogs";
+import { IcpInfo } from "./_components/icp-info";
 
 // Constain is used to constrain the width of some of the content
 const Constrain = ({ children }: { children: React.ReactNode }) => {
@@ -33,7 +34,7 @@ const Page: React.FC = () => {
       </Constrain>
 
       <Constrain>
-        <p className="text-muted-foreground text-xs">蜀ICP备2025119544号-1</p>
+        <IcpInfo />
       </Constrain>
     </main>
   );
