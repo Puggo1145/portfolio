@@ -29,7 +29,7 @@ export const NewProject = () => {
                     variant="outline"
                 >
                     <Link 
-                        href="https://github.com/Puggo1145/puzzle-fact-check"
+                        href="https://www.puzzle-fact-check.com"
                         target="_blank"
                     >
                         Have a look
