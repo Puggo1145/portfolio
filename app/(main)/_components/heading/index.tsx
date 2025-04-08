@@ -45,7 +45,7 @@ const Heading: React.FC = () => {
         <NewProject />
       </div>
       <div className="flex gap-x-4">
-        <Button
+        {/* <Button
           asChild
           className="rounded-full"
           size="lg"
@@ -54,7 +54,7 @@ const Heading: React.FC = () => {
             <FileTextIcon className="mr-2" size={20} />
             My Resume
           </Link>
-        </Button>
+        </Button> */}
         <Button
           asChild
           className="rounded-full"
