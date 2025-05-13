@@ -10,10 +10,10 @@ export function ProductTimeline() {
         title: item.time,
         content: (
             <div>
-                <h1 className="text-neutral-800 dark:text-neutral-200 text-2xl font-bold mb-2">
+                <h1 className="text-neutral-800 dark:text-neutral-200 text-2xl md:text-3xl font-bold mb-2">
                     {item.heading}
                 </h1>
-                <p className="text-neutral-800 dark:text-neutral-200 md:text-sm font-normal mb-8">
+                <p className="text-neutral-800 dark:text-neutral-200 font-normal mb-8">
                     {item.desc}
                 </p>
                 {item.buttonText && item.link && (

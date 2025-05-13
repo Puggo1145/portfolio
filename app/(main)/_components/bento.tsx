@@ -104,7 +104,7 @@ const features = [
     {
         Icon: LayoutGridIcon,
         name: "My Skills",
-        description: "I have experience with bunches of technologies from design to development and deployment.",
+        description: "I have experience with bunches of technologies from design to fullstack development and deployment.",
         href: "https://github.com/Puggo1145",
         cta: "go to my github",
         background: (

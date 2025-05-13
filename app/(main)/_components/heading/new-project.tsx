@@ -5,7 +5,7 @@ import { SparkleIcon } from "lucide-react";
 
 export const NewProject = () => {
     return (
-        <section className="flex flex-col gap-y-8 items-end">
+        <section className="hidden md:flex flex-col gap-y-8 items-end">
             <div className="relative h-16 flex flex-col justify-center items-end">
                 <h2 className="relative z-10 text-5xl font-bold font-playfair
                 bg-gradient-to-r from-primary/65 to-primary text-transparent bg-clip-text">

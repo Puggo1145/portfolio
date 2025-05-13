@@ -28,6 +28,9 @@ import ydcrmTasks from "@/assets/images/ydcrm-tasks.png";
 import ydcrmData from "@/assets/images/ydcrm-data.png";
 // micfc
 import micfc from "@/assets/images/micfc.png";
+// usc
+import uscViterbi from "@/assets/images/usc-viterbi.jpg"
+
 interface ProductTimeline {
     time: string;
     heading: string;
@@ -148,7 +151,7 @@ export const productTimeline: ProductTimeline[] = [
         link: "https://github.com/Puggo1145/ydcrm-nextjs-frontend",
     },
     {
-        time: "Oct 2024 - Present",
+        time: "Oct 2024 - Dec 2024",
         heading: "Internship 2: Xiaomi Consumer Finance",
         desc: (
             <>
@@ -160,6 +163,18 @@ export const productTimeline: ProductTimeline[] = [
         ),
         image: [
             micfc.src,
+        ],
+    },
+    {
+        time: "Aug 2025 - Future",
+        heading: "Computer Science in the University of Southern California",
+        desc: (
+            <>
+                Embarking on my further Computer Science study at the University of Southern California starting Fall 2025. <br />
+            </>
+        ),
+        image: [
+            uscViterbi.src,
         ],
     },
 ];
