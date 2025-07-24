@@ -42,9 +42,6 @@ export function ProductTimeline() {
     return (
         <div className="w-full">
             <Timeline data={data} />
-            <p className="text-center text-neutral-800 dark:text-neutral-200 font-bold mb-2">
-                The journey has only just begun.
-            </p>
         </div>
     );
 }

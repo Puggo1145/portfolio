@@ -47,19 +47,21 @@ const myProducts = [
 ]
 
 const skills = [
-    "html5",
-    "css3",
     "javascript",
     "typescript",
     "react",
     "vuedotjs",
     "nodedotjs",
-    "express",
     "nextdotjs",
-    "nuxtdotjs",
     "python",
     "docker",
-    "git",
+    "java",
+    "springboot",
+    "mysql",
+    "mongodb",
+    "postgresql",
+    "redis",
+    "apachekafka"
 ]
 
 const features = [

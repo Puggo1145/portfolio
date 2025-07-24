@@ -6,10 +6,9 @@ export const blogs = [
     image: "https://www.notion.so/images/page-cover/rijksmuseum_jansz_1637.jpg"
   },
   {
-    title: "Build Your Own React",
-    description: "The Chinese translation of the blog Build Your Own React with my own implementation",
-    link: "https://tinted-galette-9e6.notion.site/Oh-My-React-React-Deep-Dive-9cb6f85e41854521bdff6ed7ce9d806f?pvs=74",
-    github: "https://github.com/Puggo1145/oh-my-react",
+    title: "My React",
+    description: "Core source code implementation of React.js",
+    github: "https://github.com/Puggo1145/my-react",
     image: "https://tinted-galette-9e6.notion.site/image/https%3A%2F%2Fmiro.medium.com%2Fv2%2Fresize%3Afit%3A2000%2F1*y6C4nSvy2Woe0m7bWEn4BA.png?table=block&id=9cb6f85e-4185-4521-bdff-6ed7ce9d806f&spaceId=da1a9f2b-1125-4084-ab58-0d786d068870&width=2000&userId=&cache=v2"
   },
   {

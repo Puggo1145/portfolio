@@ -94,9 +94,7 @@ export const productTimeline: ProductTimeline[] = [
         desc: (
             <>
                 A campus mini-program, designed to facilitate social and lifestyle services at Chongqing Normal University. (v2.0)<br />
-                We have currently gained <strong>4000+ users</strong>, with a <strong>70%+ daily user retention rate</strong>. Students love what we built. <br />
-                <br />
-                The app is available on WeChat - search for "智慧重师" to try it out (a university account is required).
+                We have gained <strong>5000+ users</strong>, with a <strong>70%+ daily user retention rate</strong>. Students love what we built. <br />
             </>
         ),
         image: [
@@ -108,19 +106,14 @@ export const productTimeline: ProductTimeline[] = [
     },
     {
         time: "Feb 2024 - May 2024",
-        heading: "Internship 1: Chengdu Huibian Technology",
+        heading: "Internship 1: Huibian Technology",
         desc: (
             <>
-                Frontend Developer <br />
-                <br />
-                1. Designed the mobile application product by leading UI technology selection and unified the design specifications through TailwindCSS to improve development efficiency <br />
-                2. Simplified the business logic for users with by reconstructing the nested tree structure and splitting functions at different levels to reach easier and more intuitive understanding <br />
-                3. Improved the performance of multi-tab pages on mobile devices by using partial lazy loading and data caching and integrated a highly cohesive skeleton screen design with a unique network request map to avoid data request conflicts and enhance user experience <br />
-                4. Established a highly available UI design standard and its corresponding Vue component library as the company's standard component asset for use in other projects.  <br />
+                Software Engineer Intern <br />
                 <br />
                 This internship was invaluable, marking a significant shift in my professional career as a student who, despite having limited technical experience at first, ultimately made a transformative growth. <br />
                 <br />
-                Due to some privacy concerns, I can only showcase the user interface design below.
+                Due to some privacy concerns, I can only showcase some of the user interface design below.
             </>
         ),
         image: [
@@ -136,7 +129,7 @@ export const productTimeline: ProductTimeline[] = [
         desc: (
             <>
                 A fullstack CRM system created for my dad's company with cutting-age tech stacks such as Next.js, server actions and prisma, which is now in production. <br />
-                This app has helped my dad's company to effectively manage more than <strong>10k+ data</strong>, bringing more than <strong>30% efficiency improvement</strong>. <br />
+                This app has helped my dad's company to effectively manage more than <strong>30k+ data</strong>, bringing more than <strong>150% efficiency improvement</strong>. <br />
                 <br />
                 Due to some privacy concerns, you can only view the specially processed frontend source code on Github.
             </>
@@ -155,10 +148,14 @@ export const productTimeline: ProductTimeline[] = [
         heading: "Internship 2: Xiaomi Consumer Finance",
         desc: (
             <>
-                1. Participated in complete requirement reviews, scheduling, development, integration, testing, and deployment of B2B backend management project by collaborating with a team of over 50 people to ensure work efficiency. <br />
-                2. Developed and iterated frontend functionality while maintaining the backend management system and H5 pages, including the product center, parameter validation, customer repayment deductions, and data verification pages <br />
-                3. Iterated the backend system based on the micro-frontend framework Qiankun, encapsulated over 10 business and UI components, and optimized MobX for global state management across namespaces with TypeScript <br />
-                4. Constructed frontend foundational projects, participated in the research and maintenance of a Node.js-based middle-platform permission system, and processed API request permission configurations, forwarding, and management to enhance the security and manageability of downstream projects <br />
+                Software Engineer Intern <br />
+                <br />
+                Gained a deeper understanding of software development process in a larger company. <br />
+                Improved my fullstack skills. Learned micro-frontend for the first time. <br />
+                Impressed by how people can organize these huge and complex projects so well through professional software engineering.<br />
+                Worked with nice people from different teams, departments. <br />
+                <br />
+                And eat a lot of delicious food~
             </>
         ),
         image: [
